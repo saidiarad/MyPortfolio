@@ -1,0 +1,306 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #F9F9F9;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+}
+
+header {
+    .logo-holder img {
+        width: 120px;
+        height: auto;
+    }
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    margin: auto;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        align-items: center;
+        display: flex;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+
+            li {
+                a {
+                    margin: 10px 20px;
+                    padding-bottom: 5px;
+                    color: black;
+
+                    &:hover {
+                        border-bottom: black solid 3px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        nav {
+            align-items: center;
+            margin-top: 30px;
+            width: auto;
+
+            ul {
+                align-items: center;
+                display: flex;
+
+                &.active {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.hero {
+
+    .circle {
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: white;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        z-index: -1;
+        top: 15%;
+        left: 15%;
+        animation: float 20s infinite ease-in alternate;
+        animation-delay: .2s;
+    }
+
+    height: 75vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    .hero-blue {
+        flex: 1;
+        justify-items: start;
+
+        h1 {
+            font-size: 40px;
+            width: 80%;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 180%;
+            padding-top: 20px;
+            width: 70%;
+        }
+
+        .p-about {
+            text-align: justify;
+        }
+    }
+
+    .hero-yellow {
+        flex: 1;
+        max-width: 500px;
+        border-radius: 100%;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.social-links a {
+    margin-top: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+    border-bottom: black solid 1px;
+    font-size: 16px;
+    font-weight: 300;
+
+    &:hover {
+        font-weight: 500;
+        border-bottom: black solid 1px;
+
+    }
+}
+
+.active {
+    margin: 10px 20px;
+    padding-bottom: 5px;
+    border-bottom: black solid 3px;
+    font-weight: 500;
+}
+
+.social-links p {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@keyframes float {
+    100% {
+        transform: translateX(320px);
+    }
+}
+
+.scroll-down {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    position: absolute;
+    align-items: center;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    top: 80%;
+    right: -40px;
+    z-index: -1;
+}
+
+    .skills-container {
+        margin-top: 30vh;
+
+        h2 {
+            padding-bottom: 35px;
+            flex: 1;
+            align-items: center;
+            justify-items: start;
+            justify-content:left;
+            text-align: left;
+            font-size: 30px;
+        }
+
+        .skills-table {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(15rem, 1fr));
+            grid-gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            .left-column {
+                flex: 1;
+                justify-content: end;
+                justify-items: end;
+                align-items: end;
+                display: flex;
+                flex-direction: column;
+                .bar1 {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-items: center;
+                    text-align: center;
+                    padding-bottom: 25px;
+                    font-size: 18px;
+                }
+                .skill1 {
+                    display: flex;
+                    justify-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .skills-h1 {
+            font-size: 120px;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 25px;
+            padding-left: 90px;
+            width: 355px;
+            height: 3px;
+            background: black;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            margin-bottom: 150px;
+
+        }
+        .progress-title {
+            display: inline-block;
+            text-align: end;
+            font-size: 13px;
+        }
+
+        .progress-container {
+            margin-top: 6px;
+            width: 25vh;
+            border-radius: 50px;
+            overflow: hidden;
+            outline-style: solid;
+            outline-width: 2px;
+        }
+
+        .progress-bar-25 {
+            width: 25%; /* Adjust this value to change the progress */
+            height: 25px;
+            background-color: black;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+
+        }
+
+        .progress-bar-50 {
+            width: 50%; /* Adjust this value to change the progress */
+            height: 25px;
+            background-color: black;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+
+        }
+
+        .progress-bar-75 {
+            width: 75%; /* Adjust this value to change the progress */
+            height: 25px;
+            background-color: black;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+
+        }
+    }
