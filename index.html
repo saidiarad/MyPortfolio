@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPF0PDGJLM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-CPF0PDGJLM');
+    </script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
     <script src="script.js"></script>
-    <link rel="icon" type="image/jpg" href="Assets/favicon.jpg">
+    <link href="Assets/favicon.jpg" rel="icon" type="image/jpg">
     <title>Arad Saidi</title>
 </head>
 <body>
 <header>
-    <a href="index.html" class="logo-holder"><img src="/Assets/Logo.png" alt="Arad Saidi"></a>
+    <a class="logo-holder" href="index.html"><img alt="Arad Saidi" src="/Assets/Logo.png"></a>
     <nav>
         <ul id="menu">
-            <li>
-                <a href="index.html" class=" active">Home</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
             <li>
                 <a href="blog.html">Blog</a>
             </li>
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">Available for work</a>
             </li>
         </ul>
     </nav>
@@ -35,9 +42,10 @@
     <section class="hero container">
         <div class="circle"></div>
         <div class="hero-yellow">
-            <img src="Assets/me.png" alt="Arad Saidi" width="100%">
+            <img alt="Arad Saidi" src="Assets/me.png" width="100%">
         </div>
-        <div class="hero-blue"><h1>UI/UX Designer & Front-End Developer.</h1><p>Hey 👋🏻, my name is Arad. A passionate designer & developer based in Germany 🇩🇪.</p></div>
+        <div class="hero-blue"><h1>UI/UX Designer & Front-End Developer.</h1>
+            <p>Hey 👋🏻, my name is Arad. A passionate designer & developer based in Germany 🇩🇪.</p></div>
     </section>
 </main>
 <div class="social-links">
