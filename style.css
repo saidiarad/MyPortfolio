@@ -83,6 +83,10 @@ header {
     @media (max-width: 1290px) {
         flex-direction: column;
         align-items: center;
+        .logo-holder img {
+            width: 250px; /* Set the width of the logo */
+            height: auto; /* Maintain the aspect ratio */
+        }
         nav {
             align-items: center;
             margin-top: 30px;
