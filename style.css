@@ -80,7 +80,7 @@ header {
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1290px) {
         flex-direction: column;
         align-items: center;
         nav {
