@@ -1,0 +1,20 @@
+{
+  "name": "Arad",
+  "short_name": "App",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "theme-color",
+  "icons": [
+    {
+      "src": "favicons/favicon.ico",
+      "sizes": "192x192",
+      "type": "favicons/favicon.ico"
+    },
+    {
+      "src": "favicons/favicon.ico",
+      "sizes": "512x512",
+      "type": "favicons/favicon.ico"
+    }
+  ]
+}
