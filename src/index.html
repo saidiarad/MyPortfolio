@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page title -->
+    <title>Arad</title>
+
+    <!-- Character set -->
+    <meta charset="UTF-8" />
+
+    <!-- Progressive web application -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+
+    <!-- Auto dark mode -->
+    <meta
+      content="#141414"
+      media="(prefers-color-scheme: dark)"
+      name="theme-color"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CPF0PDGJLM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-CPF0PDGJLM");
+    </script>
+    <!-- Preconnect to Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plaster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet file -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Manifest file -->
+    <link href="/manifest.json" rel="manifest" />
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- iOS favicon -->
+    <link href="favicons/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- chrome favicon -->
+    <link href="favicons/transparent_favicon_io/favicon.ico" rel="favicon" />
+  </head>
+
+  <body class="bg-mono-dusk-snow p-4 sm:p-6 md:p-8 lg:p-10">
+    <nav>
+      <div class="flex sm:justify-center lg:justify-between items-center">
+        <div class="hidden lg:flex">
+          <a
+            href="#"
+            class="inline-flex h-[3rem] line-through w-auto py-[0.75rem] px-[1.25rem] justify-center items-center pointer-events-none gap-0.5 rounded-3xl bg-mono-mint-cream text-mono-black-kush uppercase font-medium text-p1-caps"
+            >Available For Work</a
+          >
+        </div>
+        <div class="flex justify-center">
+          <a class="logo-holder" href="index.html">
+            <img alt="Arad Saidi" src="/assets/Logo.svg" class="dark:invert" />
+          </a>
+        </div>
+        <div class="flex gap-12">
+          <div class="hidden lg:flex">
+            <a
+              href="#"
+              class="inline-flex h-[3rem] w-auto py-[0.75rem] px-[1.25rem] justify-center items-center gap-0.5 rounded-3xl bg-mono-dusk-snow text-mono-black-kush uppercase font-medium text-p1-caps"
+              >Blog</a
+            >
+          </div>
+          <div class="hidden lg:flex">
+            <a
+              href="#"
+              class="inline-flex h-[3rem] w-auto py-[0.75rem] px-[1.25rem] justify-center items-center gap-2.5 rounded-3xl bg-mono-mint-cream text-mono-black-kush uppercase font-medium text-p1-caps"
+              ><span
+                class="h-[0.5rem] w-[0.5rem] bg-mono-black-kush rounded-3xl inline-block"
+              ></span
+              >About Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="hero container items-center flex justify-center align-middle"
+      >
+        <div>
+          <h1
+            class="text-h1-caps uppercase font-light leading-[100%] tracking-[1rem] text-brand-mauve"
+          >
+            Site is maintaining
+          </h1>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

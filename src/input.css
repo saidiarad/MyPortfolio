@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plaster&display=swap");
+
+@font-face {
+  font-family: "Visuelt Pro";
+  src: url("/fonts/visuelt-pro/VisueltPro-Bold.woff2") format("woff2"),
+    url("/fonts/visuelt-pro/VisueltPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visuelt Pro";
+  src: url("/fonts/visuelt-pro/VisueltPro-Light.woff2") format("woff2"),
+    url("/fonts/visuelt-pro/VisueltPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.h1-caps {
+  @apply font-visuelt text-h1-caps tracking-h1-caps leading-h1-caps font-light uppercase;
+}
+.p1-caps {
+  @apply font-inter text-p1-caps tracking-p1-caps leading-p1-caps font-black uppercase;
+}
