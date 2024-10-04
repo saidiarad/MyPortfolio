@@ -701,52 +701,8 @@ video {
   text-transform: uppercase;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-normal {
-  line-height: 1.5;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
 .leading-\[100\%\] {
   line-height: 100%;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-
-.tracking-\[5px\] {
-  letter-spacing: 5px;
-}
-
-.tracking-\[15px\] {
-  letter-spacing: 15px;
-}
-
-.tracking-\[55px\] {
-  letter-spacing: 55px;
-}
-
-.tracking-\[100\%\] {
-  letter-spacing: 100%;
 }
 
 .tracking-\[1rem\] {
