@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
+    "serve": "http-server ./dist"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "tailwindcss": "^3.4.13"
   }
 }
